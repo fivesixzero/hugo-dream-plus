@@ -785,7 +785,7 @@ p > img:not(.emoji), li > img {
   -o-transition: all 0.4s;
   transition: all 0.4s;
 }
- 
+
 .card.title-content {
   opacity: 0;
   bottom: 0;
@@ -916,4 +916,24 @@ p > img:not(.emoji), li > img {
 
 .blog-card:hover .color-overlay {
   background: rgba(0, 0, 0, 0.6);
+}
+
+
+/* custom image things */
+img[src$='#center']
+{
+    display: block;
+    margin: 0.7rem auto;
+}
+
+img[src$='#floatleft']
+{
+    float:left;
+    margin: 0.7rem !important;
+}
+
+img[src$='#floatright']
+{
+    float:right;
+    margin: 0.7rem !important;
 }

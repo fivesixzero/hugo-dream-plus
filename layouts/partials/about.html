@@ -2,8 +2,12 @@
 	<article class="twemoji">
 		{{- readFile "/content/about.md" | markdownify | emojify -}}
 	</article>
+
 	{{- if .Site.Params.copyright -}}
 	<br><hr>
+    {{- if .Site.Params.aboutSite -}}
+    {{- readFile "/content/aboutSite.md" | markdownify | emojify -}}<br><br>
+    {{- end }}
 	{{ partial "copyright.html" . }}
 	{{- end }}
 </div>
